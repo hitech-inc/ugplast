@@ -1,6 +1,6 @@
  @font-face {
     font-family: Franklin; /* Имя шрифта */
-    src: url(fonts/FRAMDCN.ttf); /* Путь к файлу со шрифтом */
+    src: url("fonts/FRAMDCN.ttf"); /* Путь к файлу со шрифтом */
    }
 
 * {
@@ -695,8 +695,8 @@ img.lb-image {
 	margin-right: 0;
 }
 .abox > img { 
-  height: 98px;
-  width: 98px;
+  /*height: 98px;
+  width: 98px;*/
   margin-right: 20px;
 
 }

@@ -4,10 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Page;
-use App\Models\Sliders;
-use App\Models\Services;
+use App\Models\sliders;
+use App\Models\services;
 use App\Models\Blocks;
-use App\Models\Advantages;
+use App\Models\advantages;
 
 class FrontendController extends Controller
 {
@@ -16,10 +16,10 @@ class FrontendController extends Controller
     {
     	$pages = Page::where('url', '/')->get();
     	$pAbout = Page::where('url', '/about')->get();
-    	$sliders = Sliders::get();
-    	$services = Services::get()->take(4);
+    	$sliders = sliders::get();
+    	$services = services::get()->take(4);
     	$blocks = Blocks::get();
-    	$advantages = Advantages::get();
+    	$advantages = advantages::get();
     	//dd($pAbout);
     	return view('frontend.index', compact('pages', 'sliders', 'services', 'blocks', 'advantages', 'pAbout'));
     }
