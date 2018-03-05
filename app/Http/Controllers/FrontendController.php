@@ -36,4 +36,9 @@ class FrontendController extends Controller
     	//dd($services);
     	return view('frontend.ourservices', compact('services'));
     }
+
+    public function contacts()
+    {
+    	return view('frontend.contacts');
+    }
 }

@@ -8,7 +8,7 @@
 				<li><a href="#3">Продукция</a></li>
 				<li><a href="#4">Прайс-листы</a></li>
 				<li><a href="#5">Сертификаты</a></li>
-				<li><a href="#6">Контакты</a></li>
+				<li><a href="/contacts">Контакты</a></li>
 			</ul>
 		</div>
 	</div>

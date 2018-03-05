@@ -17,6 +17,7 @@ Route::get('/', 'FrontendController@index');
 
 Route::get('/ourservices', 'FrontendController@ourservices');
 Route::get('/about', 'FrontendController@about');
+Route::get('/contacts', 'FrontendController@contacts');
 
 // Route::get('/', function () {
 //     return view('frontend.index');

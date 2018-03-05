@@ -15,4 +15,13 @@
 		<div class="col-8">
 			<h2>
 				{{ $service->title }}
-			
+			</h2>
+			<p>
+				{{ $service->body }}
+			</p>
+		</div>
+		@endforeach
+	</div>
+</div>
+
+@endsection
