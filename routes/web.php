@@ -11,6 +11,40 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+//frontend
+
+Route::get('/', 'FrontendController@index');
+
+Route::get('/ourservices', 'FrontendController@ourservices');
+Route::get('/about', 'FrontendController@about');
+
+// Route::get('/', function () {
+//     return view('frontend.index');
+// });
+
+Route::get('version', function(){
+	return App::version();
 });
+
+
+Auth::routes();
+
+//backend
+
+Route::get('/admin', 'HomeController@index');
+
+Route::resource('pages', 'PageController');
+Auth::routes();
+
+Route::get('/admin', 'HomeController@index')->name('admin');
+
+
+Route::resource('blocks', 'BlocksController');
+
+Route::resource('services', 'servicesController');
+
+Route::resource('advantages', 'advantagesController');
+
+Route::resource('sliders', 'slidersController');
+
+Route::resource('news', 'newsController');
