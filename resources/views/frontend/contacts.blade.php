@@ -2,10 +2,20 @@
 
 @section('content')
 
-<div class="container" style="margin-bottom: 25px;">
+<div class="container">
+	<div style="margin-bottom: 25px;">
 	@include('frontend.partials._topMenu')
+	</div>
+	<div class="row">
+		@include('frontend.partials._sidebar')
+		<div class="col-9">
+			<div class="row">
+				<div class="col-12">
+					@include('frontend.partials._contacts')
+				</div>
+			</div>
+		</div>
+	</div>	
 </div>
-
-@include('frontend.partials._contacts')
 
 @endsection

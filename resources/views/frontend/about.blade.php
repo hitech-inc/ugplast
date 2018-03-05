@@ -5,10 +5,12 @@
 	@include('frontend.partials._topMenu')
 </div>
 
-<div class="container">
-	<div class="row">
+<div class="container" id="container-3">
+	<div class="row" id="third-row">
+		@include('frontend.partials._sidebar')
+
 		@foreach( $abouts as $about )
-		<div class="col-12">
+		<div class="col-9">
 			<h1>{{ $about->title }}</h1>
 			<p>{!! $about->body !!}</p>
 		</div>
