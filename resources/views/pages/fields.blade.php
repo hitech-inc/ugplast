@@ -22,7 +22,3 @@
     <a href="{!! route('pages.index') !!}" class="btn btn-default">Cancel</a>
 </div>
 
-<script src="{{ asset('vendor/unisharp/laravel-ckeditor/ckeditor.js') }}"></script>
-<script>
-    CKEDITOR.replace( 'ckeditor' );
-</script>

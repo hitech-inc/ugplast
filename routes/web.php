@@ -18,6 +18,8 @@ Route::get('/', 'FrontendController@index');
 Route::get('/ourservices', 'FrontendController@ourservices');
 Route::get('/about', 'FrontendController@about');
 Route::get('/contacts', 'FrontendController@contacts');
+Route::get('/productions', 'FrontendController@productions');
+Route::get('/all-news', 'FrontendController@news');
 
 // Route::get('/', function () {
 //     return view('frontend.index');
@@ -49,3 +51,5 @@ Route::resource('advantages', 'advantagesController');
 Route::resource('sliders', 'slidersController');
 
 Route::resource('news', 'newsController');
+
+Route::resource('products', 'ProductController');

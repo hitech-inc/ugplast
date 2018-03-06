@@ -8,17 +8,21 @@
 		</ul>
 	</div>
 	<div class="s-news">
-		<h4>Наши новости</h4>
+		<a href="/all-news" target="_blank">
+			<h4>Наши новости</h4>	
+		</a>
 		<div id="wrapper-news">
 			<a href="#" id="news-previous" class="slider-up"><span></span></a> 
 			<ul id="vertical-ticker-news">
+				@foreach( App\Models\news::getnews() as $sidebarNew )
 				<li>
-					<p>12</p>
-					<p>Январь</p>
-					<p>Полиэтиленовые трубы - технология будущего</p>
+					<p>{{ Carbon\Carbon::parse( $sidebarNew->created_at )->format('d') }}</p>
+					<p>{{ Carbon\Carbon::parse( $sidebarNew->created_at )->format('F') }}</p>
+					<p>{{ $sidebarNew->title }}</p>
 					<a href="#aa">Подробнее</a>
 				</li>
-				<li>							
+				@endforeach
+				<!-- <li>							
 					<p>09</p>
 					<p>Февраль</p>
 					<p>Сварочные аппараты - технология будущего</p>
@@ -35,7 +39,7 @@
 					<p>Март</p>
 					<p>Полиэтиленовые трубы - технология будущего</p>
 					<a href="#aa">Подробнее</a>
-				</li>
+				</li> -->
 			</ul>
 		   <a href="#" id="news-next" class="slider-down"><span></span></a> 
 		</div>

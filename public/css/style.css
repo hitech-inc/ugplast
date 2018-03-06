@@ -899,3 +899,46 @@ footer {
 
 
 /*******************************/
+
+.mainTitle{
+	margin: 25px 0;
+	text-align: center;
+}
+
+.productionsImg{
+	border-radius: 8px;
+	max-width: 100%;
+	padding-bottom: 25px;
+}
+
+
+.linkMore{
+	display: block;
+	width: 150px;
+  height: 40px;
+  font-size: 1em;
+  padding: 10px;
+  /*padding-left: 20px;*/
+  /*line-height: 53px;*/
+  border-radius: 7px;
+  color: #fff;
+  background-color: #00669e;
+  margin: 5px 0 20px 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.linkMore:hover{
+	color: #00669e;
+	background-color: #fff;
+}
+
+
+.linkMore span{
+	float: right;
+  /*margin: 11px 12px 0 0;*/
+  margin-top: -6px;
+  width: 32px;
+  height: 32px;
+  background-image: url(../img/more-info-button.png);
+}

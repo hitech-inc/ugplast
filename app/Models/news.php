@@ -51,5 +51,9 @@ class news extends Model
         'body' => 'required'
     ];
 
+    public static function getnews(){
+        return self::get();
+    }
+
     
 }
