@@ -1,6 +1,6 @@
-<div class="footer-container">
-		<div class="footer-top">
-			<div class="footer-menu">
+	<div class="footer-container">
+		<div class="row">
+			<div class="col-6 col-sm-6 col-md-3 col-lg-3">
 				<h4>ТОО "ЮгПласт"</h4>
 				<ul>
 					<li><a href="#1">О фирме</a></li>
@@ -10,7 +10,7 @@
 					<li><a href="#5">Контакты</a></li>
 				</ul>
 			</div>
-			<div class="footer-menu">
+			<div class="col-6  col-sm-6 col-md-3 col-lg-3">
 				<h4>ТОО "ЮгПласт"</h4>
 				<ul>
 					<li><a href="#1">О фирме</a></li>
@@ -20,7 +20,7 @@
 					<li><a href="#5">Контакты</a></li>
 				</ul>
 			</div>
-			<div class="footer-menu">
+			<div class="col-6  col-sm-6 col-md-3 col-lg-3">
 				<h4>ТОО "ЮгПласт"</h4>
 				<ul>
 					<li><a href="#1">О фирме</a></li>
@@ -30,7 +30,7 @@
 					<li><a href="#5">Контакты</a></li>
 				</ul>
 			</div>
-			<div class="footer-menu">
+			<div class="col-6  col-sm-6 col-md-3 col-lg-3">
 				<h4>ТОО "ЮгПласт"</h4>
 				<ul>
 					<li><a href="#1">О фирме</a></li>

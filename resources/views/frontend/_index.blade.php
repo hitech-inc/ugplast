@@ -117,7 +117,7 @@
 </div> <!-- #container-2 -->
 <div class="container" id="container-3">
 	<div class="row" id="third-row">
-		<div class="col-3" id="sidebar">
+		<div class="col-12 col-sm-12 col-md-3 col-lg-3 order-2 order-sm-1 order-md-1 order-lg-1" id="sidebar">
 			<div class="s-catalogue">
 				<h4>Каталог продукции</h4>
 				<ul>
@@ -173,7 +173,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-9" id="content">
+		<div class="col-12 col-sm-12 col-md-9 col-lg-9 order-1 order-sm-2 order-md-2 order-lg-2" id="content">
 			<div class="article-1">
 				<h3>Добро пожаловать на сайт Компании "ЮгПласт"</h3>
 				<p>ТОО «ЮгПласт» занимается изготовлением и поставкой качественных трубопроводных систем из полиэтилена. <br>
@@ -292,10 +292,10 @@
 </div> <!-- #container-6 -->
 <div class="container" id="container-7">
 	<div class="row" id="seventh-row">
-		<div class="col-8" id="map">
+		<div class="col-12 col-sm-12 col-md-8 col-lg-8 " id="map">
 	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11800.54866961717!2d69.58207222941076!3d42.31827303326112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDLCsDE5JzA1LjciTiA2OcKwMzUnMjcuMCJF!5e0!3m2!1sru!2skz!4v1519988348934" width="100%" height="320" frameborder="0" style="border:0" allowfullscreen></iframe>
 		</div>
-		<div class="col-4" id="feedback">
+		<div class="col-12 col-sm-12 col-md-4 col-lg-4" id="feedback">
 			<h3>Оставьте заявку</h3>
 			<form action="">
 				<input type="text" name="name" placeholder="Ваше имя">
