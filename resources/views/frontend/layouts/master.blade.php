@@ -21,7 +21,7 @@
 		<header>
 			@include('frontend.partials._header')
 		</header>
-		<div class="container-fluid">
+		<div class="page-wrapper">
 			@yield('content')
 		</div>
 		<footer>
