@@ -13,7 +13,7 @@
 		
 		@include('frontend.partials._sidebar')
 
-		<div class="col-12 col-sm-12 col-md-9 col-lg-9 order-1 order-sm-2 order-md-2 order-lg-2" id="content">
+		<div class="col-12 col-sm-12 col-md-9 col-lg-9 order-1 order-sm-1 order-md-2 order-lg-2" id="content">
 			@foreach($pages as $page)
 			<div class="article-1">
 				{!! $page->body !!}
