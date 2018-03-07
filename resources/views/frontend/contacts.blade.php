@@ -3,9 +3,9 @@
 @section('content')
 
 <div class="container">
-	<div style="margin-bottom: 25px;">
+
 	@include('frontend.partials._topMenu')
-	</div>
+	
 	<div class="row">
 		@include('frontend.partials._sidebar')
 		<div class="col-9">
