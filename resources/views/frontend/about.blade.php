@@ -10,7 +10,11 @@
 		@include('frontend.partials._sidebar')
 
 		@foreach( $abouts as $about )
+
 		<div class="col-12 col-sm-12 col-md-9 col-lg-9 order-1 order-sm-2 order-md-2 order-lg-2">
+=======
+		<div class="col-9 col-xl-9">
+
 			<h1>{{ $about->title }}</h1>
 			<p>{!! $about->body !!}</p>
 		</div>

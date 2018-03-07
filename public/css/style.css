@@ -1,6 +1,6 @@
  @font-face {
     font-family: Franklin; /* Имя шрифта */
-    src: url("fonts/FRAMDCN.ttf"); /* Путь к файлу со шрифтом */
+    src: url("../fonts/FranklinGothic-MediumCond.woff"); /* Путь к файлу со шрифтом */
    }
 
 * {
