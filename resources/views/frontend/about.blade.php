@@ -1,9 +1,9 @@
 @extends('frontend.layouts.master')
 
 @section('content')
-<div class="container" style="margin-bottom: 25px;">
+
 	@include('frontend.partials._topMenu')
-</div>
+
 
 <div class="container" id="container-3">
 	<div class="row" id="third-row">
