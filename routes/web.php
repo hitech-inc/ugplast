@@ -19,6 +19,7 @@ Route::get('/ourservices', 'FrontendController@ourservices');
 Route::get('/about', 'FrontendController@about');
 Route::get('/contacts', 'FrontendController@contacts');
 Route::get('/productions', 'FrontendController@productions');
+Route::get('/productions/{id}', 'FrontendController@products');
 Route::get('/all-news', 'FrontendController@news');
 Route::get('/certs', 'FrontendController@certs');
 Route::get('/management', 'FrontendController@management');

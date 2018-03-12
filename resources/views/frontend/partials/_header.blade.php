@@ -1,12 +1,12 @@
 <div class="blackline">
 	<div class="blackline-inner">
-		<p>г.Шымкент: +7 (7252) 50 50 50 | +7 (701) 620 97 21 | KZ | RU | EN </p>
+		<p>г.Шымкент: +7 (7252) 43 91 81, 39 30 91 | +7 (701) 620 97 21 | KZ | RU | EN </p>
 	</div>
 </div>
 <div class="header-container">
 	<div class="logo">
-		<a href="/"><img class="graphiclogo" src="img/logo/ugplastLogo.png" alt="logo"></a>
-		<!-- <a href="/"><img class="graphiclogo" src="img/logo.png" alt="logo"></a> -->
+		<!-- <a href="/"><img class="graphiclogo" src="img/logo/ugplastLogo.png" alt="logo"></a> -->
+		<a href="/"><img class="graphiclogo" src="img/logo.png" alt="logo"></a>
 	</div>	
 	<nav>
 		<ul class="topnav" id="myTopnav">

@@ -33,13 +33,21 @@ class FrontendController extends Controller
     	return view('frontend.about', compact('abouts'));
     }
 
-    public function productions($parent = "", $child = "")
+    public function productions()
     {
-    	$productions = Product::get();
-        $Categorys = Category::where('parent_id', null)->get();
-        $subCategorys = Category::where('parent_id', '!=', null)->get();
-    	//dd($subCategorys);
-    	return view('frontend.productions', compact('productions', 'Categorys', 'subCategorys'));
+      
+          $productions = Product::get();
+          $Categorys = Category::where('parent_id', null)->get();
+          $subCategorys = Category::where('parent_id', '!=', null)->get();
+        //dd($Categorys);
+        return view('frontend.productions', compact('productions', 'Categorys', 'subCategorys'));
+    }
+
+    public function products($id)
+    {
+      $products = Product::where('id')->first();
+      dd($products);
+      return view('frontend.products', compact('products'));
     }
 
     public function ourservices()
