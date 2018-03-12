@@ -6,7 +6,8 @@
 		</div>
 		<div class="col-12 col-sm-12 col-md-4 col-lg-4" id="feedback">
 			<h3>Оставьте заявку</h3>
-			<form action="">
+			<form action="/sendmail" method="POST">
+				{{ csrf_field() }}
 				<input type="text" name="name" placeholder="Ваше имя">
 				<input type="text" name="phone" placeholder="Ваш телефон">
 				<input type="text" name="email" placeholder="Ваш e-mail">

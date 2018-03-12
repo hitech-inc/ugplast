@@ -1,5 +1,6 @@
 	<div class="footer-container">
 		{{--<div class="row">
+		<div class="row">
 			<div class="col-6 col-sm-6 col-md-3 col-lg-3">
 				<h4>ТОО "ЮгПласт"</h4>
 				<ul>

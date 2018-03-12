@@ -109,5 +109,10 @@ class Category extends Model
         return $res;
     }
 
+    public function getChildren()
+    {
+        //$children = self::where('parent_id', $this->id)->get(); //получаю всех детей
+        return self::descendantsOf($this->id); //получаю всех детей
+    }
     
 }

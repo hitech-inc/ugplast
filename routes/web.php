@@ -18,12 +18,12 @@ Route::get('/', 'FrontendController@index');
 Route::get('/ourservices', 'FrontendController@ourservices');
 Route::get('/about', 'FrontendController@about');
 Route::get('/contacts', 'FrontendController@contacts');
-Route::get('/productions', 'FrontendController@productions');
-Route::get('/productions/{id}', 'FrontendController@products');
+Route::get('/productions/{id?}', 'FrontendController@productions'); 
 Route::get('/all-news', 'FrontendController@news');
 Route::get('/certs', 'FrontendController@certs');
 Route::get('/management', 'FrontendController@management');
 Route::get('/gallery', 'FrontendController@gallery');
+Route::post('/sendmail', 'FrontendController@sendmail');
 
 // Route::get('/', function () {
 //     return view('frontend.index');

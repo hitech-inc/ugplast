@@ -11,6 +11,8 @@ use App\Models\advantages;
 use App\Models\Product;
 use App\Models\news;
 use App\Models\Category;
+use App\Mail\SendMail;
+use Mail;
 
 class FrontendController extends Controller
 {
@@ -33,21 +35,28 @@ class FrontendController extends Controller
     	return view('frontend.about', compact('abouts'));
     }
 
-    public function productions()
+    public function productions(Request $request, $id = "")
     {
-      
-          $productions = Product::get();
-          $Categorys = Category::where('parent_id', null)->get();
-          $subCategorys = Category::where('parent_id', '!=', null)->get();
-        //dd($Categorys);
-        return view('frontend.productions', compact('productions', 'Categorys', 'subCategorys'));
-    }
+      if(!$id)
+      {
+        $productions = Product::get();
+        $categorys = Category::where('parent_id', null)->get();
 
-    public function products($id)
-    {
-      $products = Product::where('id')->first();
-      dd($products);
-      return view('frontend.products', compact('products'));
+        foreach($categorys as $category)
+        {
+          //Получаю все подкатегории
+          $category->children = $category->getChildren();
+        }
+        //dd($Categorys);
+        return view('frontend.productions', compact('productions', 'categorys', 'subCategorys'));
+      } 
+      else
+      {
+        $category = Category::where('Slug', $id)->first(); //По Slug получаю id, т.е. запись по которой кликнули, т.е. получаем категорию по ее id.
+        $products = Product::where('category_id', '=', $category->id)->get();
+        //dd($products->toArray());
+        return view('frontend.product', compact('products'));
+      }
     }
 
     public function ourservices()
@@ -84,5 +93,30 @@ class FrontendController extends Controller
     public function gallery()
     {
         return view('frontend.gallery');
+    }
+
+    public function sendmail(Request $request)
+    {
+
+        $this->validate($request, [
+            'name' => 'required | max:255',
+            'phone' => 'required | numeric',
+            'email' => 'required | email'
+        ]);
+
+        $data = [
+            'name' => $request->name,
+            'phone' => $request->phone,
+            'email' => $request->email
+        ];
+        //dd($data);
+        $success = '<div style="margin: 0 auto;">
+                      <h2 style="text-align: center; color: #000; padding: 25px;">Спасибо, Ваша заявка принята!</h2>
+                    </div>';
+
+        //dd($data);
+        Mail::to('advanced315@gmail.com')->send(new SendMail($data));
+
+        return redirect('/contacts')->with('status', $success);
     }
 }
