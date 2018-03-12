@@ -2,9 +2,9 @@
 
 @section('content')
 
-<div class="container" style="margin-bottom: 25px;">
+
 	@include('frontend.partials._topMenu')
-</div>
+
 
 <div class="container">
 	<div class="row">

@@ -10,6 +10,7 @@ use App\Models\Blocks;
 use App\Models\advantages;
 use App\Models\Product;
 use App\Models\news;
+use App\Models\Category;
 
 class FrontendController extends Controller
 {
@@ -32,11 +33,13 @@ class FrontendController extends Controller
     	return view('frontend.about', compact('abouts'));
     }
 
-    public function productions()
+    public function productions($parent = "", $child = "")
     {
     	$productions = Product::get();
-    	//dd($productions);
-    	return view('frontend.productions', compact('productions'));
+        $Categorys = Category::where('parent_id', null)->get();
+        $subCategorys = Category::where('parent_id', '!=', null)->get();
+    	//dd($subCategorys);
+    	return view('frontend.productions', compact('productions', 'Categorys', 'subCategorys'));
     }
 
     public function ourservices()
@@ -44,6 +47,11 @@ class FrontendController extends Controller
     	$services = Services::get();
     	//dd($services);
     	return view('frontend.ourservices', compact('services'));
+    }
+
+    public function certs()
+    {
+        return view('frontend.certs');
     }
 
     public function contacts()
@@ -58,5 +66,15 @@ class FrontendController extends Controller
     	//$sidebarNews = news::getnews();
     	//dd($gNews);
     	return view('frontend.all-news', compact('news', 'sidebarNews'));
+    }
+
+    public function management()
+    {
+        return view('frontend.management');
+    }
+
+    public function gallery()
+    {
+        return view('frontend.gallery');
     }
 }

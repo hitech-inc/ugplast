@@ -20,6 +20,9 @@ Route::get('/about', 'FrontendController@about');
 Route::get('/contacts', 'FrontendController@contacts');
 Route::get('/productions', 'FrontendController@productions');
 Route::get('/all-news', 'FrontendController@news');
+Route::get('/certs', 'FrontendController@certs');
+Route::get('/management', 'FrontendController@management');
+Route::get('/gallery', 'FrontendController@gallery');
 
 // Route::get('/', function () {
 //     return view('frontend.index');
@@ -53,3 +56,5 @@ Route::resource('sliders', 'slidersController');
 Route::resource('news', 'newsController');
 
 Route::resource('products', 'ProductController');
+
+Route::resource('categories', 'CategoryController');

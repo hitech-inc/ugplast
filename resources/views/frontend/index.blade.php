@@ -13,7 +13,7 @@
 		
 		@include('frontend.partials._sidebar')
 
-		<div class="col-9" id="content">
+		<div class="col-12 col-sm-12 col-md-9 col-lg-9 order-1 order-sm-1 order-md-2 order-lg-2" id="content">
 			@foreach($pages as $page)
 			<div class="article-1">
 				{!! $page->body !!}
@@ -32,7 +32,7 @@
 				</div>
 			</div>
 			<div class="certificates">
-				<h3>Сертификаты | <a href="#show">Посмотреть все</a></h3>
+				<h3>Сертификаты | <a href="/certs" target="_blank">Посмотреть все</a></h3>
 				<div class="cert-boxes owl-carousel">
 					<div class="item"><a href="img/cert-1.jpg" data-lightbox="roadtrip"><img src="img/cert-1-min.jpg" alt=""></a></div>
 					<div class="item"><a href="img/cert-2.jpg" data-lightbox="roadtrip"><img src="img/cert-2-min.jpg" alt=""></a></div>

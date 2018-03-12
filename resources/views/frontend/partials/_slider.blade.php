@@ -12,14 +12,14 @@
 				  <div class="carousel-inner">
 				  	@foreach($sliders as $slider)
 				    <div class="carousel-item @if($loop->index == 0) {{ $active = 'active'}} @endif">
-					    <img class="d-block w-100" src="img/{{ $slider->img }}" alt="$slider->title">
+					    <img class="d-block w-100" src="img/slider/{{ $slider->img }}" alt="$slider->title">
 					    <div class="carousel-caption">
 						    <p>{{ $slider->slidertext }}</p>
 						</div>
 						<div class="more-info">
 							<div class="top-more-info">
 								<h3>{{ $slider->title }}</h3>
-								<p>{{ $slider->body }}</p>
+								<p>{!! $slider->body !!}</p>
 							</div>
 							<div class="bottom-more-info">
 								<a href="{{ $slider->url }}">Подробнее<span></span></a>

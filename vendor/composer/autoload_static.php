@@ -86,6 +86,10 @@ class ComposerStaticInitef7c766f7e7ef7a4a771bf11d138608c
             'League\\Flysystem\\' => 17,
             'Laravel\\Tinker\\' => 15,
         ),
+        'K' => 
+        array (
+            'Kalnoy\\Nestedset\\' => 17,
+        ),
         'I' => 
         array (
             'InfyOm\\Generator\\' => 17,
@@ -258,6 +262,10 @@ class ComposerStaticInitef7c766f7e7ef7a4a771bf11d138608c
         array (
             0 => __DIR__ . '/..' . '/laravel/tinker/src',
         ),
+        'Kalnoy\\Nestedset\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/kalnoy/nestedset/src',
+        ),
         'InfyOm\\Generator\\' => 
         array (
             0 => __DIR__ . '/..' . '/infyomlabs/laravel-generator/src',
@@ -395,6 +403,7 @@ class ComposerStaticInitef7c766f7e7ef7a4a771bf11d138608c
         'App\\Http\\Controllers\\Auth\\RegisterController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/RegisterController.php',
         'App\\Http\\Controllers\\Auth\\ResetPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ResetPasswordController.php',
         'App\\Http\\Controllers\\BlocksController' => __DIR__ . '/../..' . '/app/Http/Controllers/BlocksController.php',
+        'App\\Http\\Controllers\\CategoryController' => __DIR__ . '/../..' . '/app/Http/Controllers/CategoryController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\FrontendController' => __DIR__ . '/../..' . '/app/Http/Controllers/FrontendController.php',
         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
@@ -412,6 +421,7 @@ class ComposerStaticInitef7c766f7e7ef7a4a771bf11d138608c
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
         'App\\Http\\Requests\\CreateBlocksRequest' => __DIR__ . '/../..' . '/app/Http/Requests/CreateBlocksRequest.php',
+        'App\\Http\\Requests\\CreateCategoryRequest' => __DIR__ . '/../..' . '/app/Http/Requests/CreateCategoryRequest.php',
         'App\\Http\\Requests\\CreatePageRequest' => __DIR__ . '/../..' . '/app/Http/Requests/CreatePageRequest.php',
         'App\\Http\\Requests\\CreateProductRequest' => __DIR__ . '/../..' . '/app/Http/Requests/CreateProductRequest.php',
         'App\\Http\\Requests\\CreateadvantagesRequest' => __DIR__ . '/../..' . '/app/Http/Requests/CreateadvantagesRequest.php',
@@ -419,6 +429,7 @@ class ComposerStaticInitef7c766f7e7ef7a4a771bf11d138608c
         'App\\Http\\Requests\\CreateservicesRequest' => __DIR__ . '/../..' . '/app/Http/Requests/CreateservicesRequest.php',
         'App\\Http\\Requests\\CreateslidersRequest' => __DIR__ . '/../..' . '/app/Http/Requests/CreateslidersRequest.php',
         'App\\Http\\Requests\\UpdateBlocksRequest' => __DIR__ . '/../..' . '/app/Http/Requests/UpdateBlocksRequest.php',
+        'App\\Http\\Requests\\UpdateCategoryRequest' => __DIR__ . '/../..' . '/app/Http/Requests/UpdateCategoryRequest.php',
         'App\\Http\\Requests\\UpdatePageRequest' => __DIR__ . '/../..' . '/app/Http/Requests/UpdatePageRequest.php',
         'App\\Http\\Requests\\UpdateProductRequest' => __DIR__ . '/../..' . '/app/Http/Requests/UpdateProductRequest.php',
         'App\\Http\\Requests\\UpdateadvantagesRequest' => __DIR__ . '/../..' . '/app/Http/Requests/UpdateadvantagesRequest.php',
@@ -426,6 +437,7 @@ class ComposerStaticInitef7c766f7e7ef7a4a771bf11d138608c
         'App\\Http\\Requests\\UpdateservicesRequest' => __DIR__ . '/../..' . '/app/Http/Requests/UpdateservicesRequest.php',
         'App\\Http\\Requests\\UpdateslidersRequest' => __DIR__ . '/../..' . '/app/Http/Requests/UpdateslidersRequest.php',
         'App\\Models\\Blocks' => __DIR__ . '/../..' . '/app/Models/Blocks.php',
+        'App\\Models\\Category' => __DIR__ . '/../..' . '/app/Models/Category.php',
         'App\\Models\\Page' => __DIR__ . '/../..' . '/app/Models/Page.php',
         'App\\Models\\Product' => __DIR__ . '/../..' . '/app/Models/Product.php',
         'App\\Models\\advantages' => __DIR__ . '/../..' . '/app/Models/advantages.php',
@@ -438,6 +450,7 @@ class ComposerStaticInitef7c766f7e7ef7a4a771bf11d138608c
         'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
         'App\\Repositories\\BlocksRepository' => __DIR__ . '/../..' . '/app/Repositories/BlocksRepository.php',
+        'App\\Repositories\\CategoryRepository' => __DIR__ . '/../..' . '/app/Repositories/CategoryRepository.php',
         'App\\Repositories\\PageRepository' => __DIR__ . '/../..' . '/app/Repositories/PageRepository.php',
         'App\\Repositories\\ProductRepository' => __DIR__ . '/../..' . '/app/Repositories/ProductRepository.php',
         'App\\Repositories\\advantagesRepository' => __DIR__ . '/../..' . '/app/Repositories/advantagesRepository.php',
@@ -2266,6 +2279,14 @@ class ComposerStaticInitef7c766f7e7ef7a4a771bf11d138608c
         'JakubOnderka\\PhpConsoleColor\\InvalidStyleException' => __DIR__ . '/..' . '/jakub-onderka/php-console-color/src/JakubOnderka/PhpConsoleColor/InvalidStyleException.php',
         'JakubOnderka\\PhpConsoleHighlighter\\Highlighter' => __DIR__ . '/..' . '/jakub-onderka/php-console-highlighter/src/JakubOnderka/PhpConsoleHighlighter/Highlighter.php',
         'Jlapp\\Swaggervel\\SwaggervelServiceProvider' => __DIR__ . '/..' . '/jlapp/swaggervel/src/Jlapp/Swaggervel/SwaggervelServiceProvider.php',
+        'Kalnoy\\Nestedset\\AncestorsRelation' => __DIR__ . '/..' . '/kalnoy/nestedset/src/AncestorsRelation.php',
+        'Kalnoy\\Nestedset\\BaseRelation' => __DIR__ . '/..' . '/kalnoy/nestedset/src/BaseRelation.php',
+        'Kalnoy\\Nestedset\\Collection' => __DIR__ . '/..' . '/kalnoy/nestedset/src/Collection.php',
+        'Kalnoy\\Nestedset\\DescendantsRelation' => __DIR__ . '/..' . '/kalnoy/nestedset/src/DescendantsRelation.php',
+        'Kalnoy\\Nestedset\\NestedSet' => __DIR__ . '/..' . '/kalnoy/nestedset/src/NestedSet.php',
+        'Kalnoy\\Nestedset\\NestedSetServiceProvider' => __DIR__ . '/..' . '/kalnoy/nestedset/src/NestedSetServiceProvider.php',
+        'Kalnoy\\Nestedset\\NodeTrait' => __DIR__ . '/..' . '/kalnoy/nestedset/src/NodeTrait.php',
+        'Kalnoy\\Nestedset\\QueryBuilder' => __DIR__ . '/..' . '/kalnoy/nestedset/src/QueryBuilder.php',
         'Laracasts\\Flash\\Flash' => __DIR__ . '/..' . '/laracasts/flash/src/Laracasts/Flash/Flash.php',
         'Laracasts\\Flash\\FlashNotifier' => __DIR__ . '/..' . '/laracasts/flash/src/Laracasts/Flash/FlashNotifier.php',
         'Laracasts\\Flash\\FlashServiceProvider' => __DIR__ . '/..' . '/laracasts/flash/src/Laracasts/Flash/FlashServiceProvider.php',

@@ -1,9 +1,9 @@
-<div class="col-3" id="sidebar">
+<div class="col-12 col-sm-12 col-md-3 col-lg-3 order-2 order-sm-2 order-md-1 order-lg-1" id="sidebar">
 	<div class="s-catalogue">
 		<h4>Каталог продукции</h4>
 		<ul>
 			<li><a href="#1">Полиэтиленовые трубы</a></li>
-			<li><a href="#2">Сварочные аппараты</a></li>
+			<!-- <li><a href="#2">Сварочные аппараты</a></li> -->
 			<li><a href="#3">Фитинги компрессинговые</a></li>
 		</ul>
 	</div>

@@ -6,8 +6,8 @@
 				<li><a href="/">Главная</a></li>
 				<li><a href="/about">О нас</a></li>
 				<li><a href="/productions">Продукция</a></li>
-				<li><a href="#4">Прайс-листы</a></li>
-				<li><a href="#5">Сертификаты</a></li>
+				<li><a href="/pricelist/price2017.xlsx" download title="">Прайс-лист</a></li>
+				<li><a href="/certs">Сертификаты</a></li>
 				<li><a href="/contacts">Контакты</a></li>
 			</ul>
 		</div>

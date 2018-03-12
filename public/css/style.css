@@ -1,6 +1,6 @@
  @font-face {
     font-family: Franklin; /* Имя шрифта */
-    src: url("fonts/FRAMDCN.ttf"); /* Путь к файлу со шрифтом */
+    src: url("../fonts/FranklinGothic-MediumCond.woff"); /* Путь к файлу со шрифтом */
    }
 
 * {
@@ -362,7 +362,8 @@ nav {
 }
 
 .s-catalogue {
-	height: 175px;
+	/*height: 175px;*/
+	height: auto;
 }
 
 .s-news{
@@ -821,14 +822,16 @@ footer {
 	margin-top: -100px;
 	width: 100%;
 	background: linear-gradient(#fff , #418db7 35% , #247cac , #5a9cc0 75%,#aaccdf 100%);
-	height: 430px;
+	/*height: 430px;*/
+	height: 230px;
 }
 
 .footer-container {
 /* 	width: 1140px; */
 	padding-top: 80px;
 	width: 1240px;
-	height: 340px;
+	/*height: 340px;*/
+	height: 140px;
 	margin: 0 auto;
 }
 
@@ -941,4 +944,27 @@ footer {
   width: 32px;
   height: 32px;
   background-image: url(../img/more-info-button.png);
+}
+
+.galleryImg{
+	width: 100%;
+	/*height: 333px;*/
+	margin-bottom: 15px;
+}
+
+.galleryImg img{
+	max-width: 100%;
+	border-radius: 8px;
+}
+
+.galleryContainer .col-4{
+	float: left;
+}
+
+div.lb-dataContainer{
+	margin-top: -17%;
+}
+
+div.lb-nav{
+	top: 55%;
 }

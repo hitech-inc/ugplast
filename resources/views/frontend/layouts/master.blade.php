@@ -2,18 +2,27 @@
 <html>
 	<head>
 		<title>Юг Пласт</title>
-			
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<meta name="viewport" content="width=device-width, initial-scale=1">	
+ 
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+
 		<link rel="stylesheet" href="css/style.css">
+
 		<link rel="stylesheet" href="css/owl.carousel.min.css">
 		<link rel="stylesheet" href="css/lightbox.min.css">
-		<!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+		<!-- mobile-->
+		<link rel="stylesheet" href="css/mobile.css">
+		<link rel="stylesheet" href="css/mobile.sm.css">
+		<link rel="stylesheet" href="css/mobile.md.css">
+		<link rel="stylesheet" href="css/mobile.lg.css">
+
+		
 	</head>
 	<body>
 		<header>
 			@include('frontend.partials._header')
 		</header>
-		<div class="container-fluid">
+		<div class="page-wrapper">
 			@yield('content')
 		</div>
 		<footer>
@@ -40,7 +49,7 @@
 					next		:	'#news-next',
 					previous	:	'#news-previous',
 					mousestop	:	true,
-					interval	:	50000,
+					interval	:	500000,
 					speed		:	100
 				});
 			});
@@ -68,8 +77,8 @@
 
 			
 		</script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-		<!-- <script src="js/bootstrap.js"></script> -->
+
+		<script src="js/bootstrap.min.js"></script>
 		<script src="js/myScript.js"></script>
 		<script src="js/lightbox.min.js"></script>
 		<script>
@@ -80,6 +89,22 @@
 		      'maxHeight' : 1500,
 		      'showImageNumberLabel': false
 		    })
+		</script>
+		<script src="js/jquery.touchSwipe.min.js"></script>
+		<script>
+			$('.cmn-toggle-switch').click(function() {
+	           $('.nav-mobile-wrapper').slideToggle();
+	        });
+
+		      //Enable swiping...   
+	        $("#carouselExampleIndicators").swipe({
+                swipeLeft:function(event, direction, distance, duration, fingerCount) {
+                    $("#carouselExampleIndicators").carousel('next'); 
+                },
+                swipeRight:function(event, direction, distance, duration, fingerCount) {
+                    $("#carouselExampleIndicators").carousel('prev'); 
+                }
+	      	})
 		</script>
 	</body>
 </html>
