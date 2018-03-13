@@ -20,7 +20,7 @@
 							</tr>
 							@foreach($products as $product)
 							<tr>
-								<td>{{ $product->Img }}</td>
+								<td>{{ $product->diametr_mm }}</td>
 								<td>{{ $product->mm }}</td>
 								<td>{{ $product->kg }}</td>
 								<td>{{ $product->price }}</td>

@@ -64,7 +64,7 @@
 				    <div class="abox">
 				    	<img src="img/{{ $advantage->img }}" alt="#1">
 					  	<p>
-					  		{{ $advantage->body }}
+					  		{!! $advantage->body !!}
 					  	</p>
 				    </div>
 				  @endforeach  
