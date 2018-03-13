@@ -83,8 +83,33 @@ class Category extends Model
     public static function select() 
     {
         $res = self::withDepth()->having('depth', '=', 0)->get();
+        //dd($res);
         return ['' => 'Верхний уровень'] + $res->pluck('Name', 'id')->all();
     }
+
+    // public static function select() 
+    // {
+    //     $res = [];
+
+    //     $roots = self::withDepth()->having('depth', '=', 0)->get();
+
+    //     foreach ($roots as $root) 
+    //     {
+    //         $children = [];
+
+    //         if ($root->hasChildren())
+    //         {
+    //             $categories = self::descendantsOf($root->id);
+    //             $children = $categories->pluck('Name', 'id')->all();
+    //         }
+
+    //         $res[$root->Name] = $children;
+    //     }
+        
+    //     $res = ['' => 'Верхний уровень'] + $res;
+    //     dd($roots);
+    //     return $res;
+    // }
 
     public static function groupedSelect() 
     {

@@ -47,7 +47,7 @@
 	@foreach( $blocks as $block )
 	<div class="row" id="fourth-row" style="background-image: url('img/{{$block->img}}')">
 		<div class="col-12" id="pipes">
-				<h3>{{ $block->title }}</h3>
+				<h3 style="width: 60%">{{ $block->title }}</h3>
 				<p>{{ $block->body }}</p>
 				<a href="#more">Подробнее<span></span></a>	
 		</div>
