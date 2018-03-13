@@ -47,6 +47,7 @@ return array(
     'App\\Http\\Requests\\UpdatenewsRequest' => $baseDir . '/app/Http/Requests/UpdatenewsRequest.php',
     'App\\Http\\Requests\\UpdateservicesRequest' => $baseDir . '/app/Http/Requests/UpdateservicesRequest.php',
     'App\\Http\\Requests\\UpdateslidersRequest' => $baseDir . '/app/Http/Requests/UpdateslidersRequest.php',
+    'App\\Mail\\SendMail' => $baseDir . '/app/Mail/SendMail.php',
     'App\\Models\\Blocks' => $baseDir . '/app/Models/Blocks.php',
     'App\\Models\\Category' => $baseDir . '/app/Models/Category.php',
     'App\\Models\\Page' => $baseDir . '/app/Models/Page.php',

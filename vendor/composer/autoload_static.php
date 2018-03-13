@@ -436,6 +436,7 @@ class ComposerStaticInitef7c766f7e7ef7a4a771bf11d138608c
         'App\\Http\\Requests\\UpdatenewsRequest' => __DIR__ . '/../..' . '/app/Http/Requests/UpdatenewsRequest.php',
         'App\\Http\\Requests\\UpdateservicesRequest' => __DIR__ . '/../..' . '/app/Http/Requests/UpdateservicesRequest.php',
         'App\\Http\\Requests\\UpdateslidersRequest' => __DIR__ . '/../..' . '/app/Http/Requests/UpdateslidersRequest.php',
+        'App\\Mail\\SendMail' => __DIR__ . '/../..' . '/app/Mail/SendMail.php',
         'App\\Models\\Blocks' => __DIR__ . '/../..' . '/app/Models/Blocks.php',
         'App\\Models\\Category' => __DIR__ . '/../..' . '/app/Models/Category.php',
         'App\\Models\\Page' => __DIR__ . '/../..' . '/app/Models/Page.php',

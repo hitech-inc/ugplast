@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddMmKgPriceItemsToProductsTable extends Migration
+class AddItemDianeterMmToProductsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -15,9 +15,7 @@ class AddMmKgPriceItemsToProductsTable extends Migration
     {
         Schema::table('products', function (Blueprint $table) {
             //
-            $table->string('mm', 255);
-            $table->string('kg,', 255);
-            $table->string('price')->nullable();
+            $table->float('diameter_mm');
         });
     }
 

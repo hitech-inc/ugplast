@@ -31,7 +31,11 @@ class Product extends Model
         'Body',
         'Img',
         'Url',
-        'Slug'
+        'Slug',
+        'mm',
+        'kg',
+        'price',
+        'category_id'
     ];
 
     /**
@@ -53,9 +57,9 @@ class Product extends Model
      * @var array
      */
     public static $rules = [
-        'Title' => 'required',
-        'Body' => 'required',
-        'Img' => 'required'
+        // 'Title' => 'required',
+        // 'Body' => 'required',
+        // 'Img' => 'required'
     ];
 
     
