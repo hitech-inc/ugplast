@@ -46,12 +46,12 @@
 	<div class="footer-bot">
 		<div class="logo-bot">
 			<div>
-				<img src="img/logo/ugplastLogo.png" alt="#foot-logo">
+				<img src="/img/logo/ugplastLogo.png" alt="#foot-logo">
 			</div>
 		</div>
 		<div class="logo-bot">
 			<div>
-				<img src="img/logo.png" alt="#foot-logo">
+				<img src="/img/logo.png" alt="#foot-logo">
 			</div>
 		</div>
 		<div class="footer-contacts">
