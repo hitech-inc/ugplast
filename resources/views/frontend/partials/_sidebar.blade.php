@@ -22,24 +22,6 @@
 					<a href="#aa">Подробнее</a>
 				</li>
 				@endforeach
-				<!-- <li>							
-					<p>09</p>
-					<p>Февраль</p>
-					<p>Сварочные аппараты - технология будущего</p>
-					<a href="#aa">Подробнее</a>
-				</li>
-				<li>								
-					<p>21</p>
-					<p>Февраль</p>
-					<p>Фитинги компрессионные - технология</p>
-					<a href="#aa">Подробнее</a>
-				</li>
-				<li>								
-					<p>03</p>
-					<p>Март</p>
-					<p>Полиэтиленовые трубы - технология будущего</p>
-					<a href="#aa">Подробнее</a>
-				</li> -->
 			</ul>
 		   <a href="#" id="news-next" class="slider-down"><span></span></a> 
 		</div>
@@ -49,10 +31,10 @@
 		<div id="wrapper-gallery">
 			<a href="#" id="ticker-previous" class="slider-up"><span></span></a> 
 			<ul id="vertical-ticker-gallery">
-				<li><img src="img/g-slider-img-222.jpg" alt="g-slider-img-1"></li>
-				<li><img src="img/g-slider-img-333.jpg" alt="g-slider-img-2"></li>
-				<li><img src="img/g-slider-img-444.jpg" alt="g-slider-img-3"></li>
-				<li><img src="img/g-slider-img-555.jpg" alt="g-slider-img-3"></li>
+				<li><img src="/img/g-slider-img-222.jpg" alt="g-slider-img-1"></li>
+				<li><img src="/img/g-slider-img-333.jpg" alt="g-slider-img-2"></li>
+				<li><img src="/img/g-slider-img-444.jpg" alt="g-slider-img-3"></li>
+				<li><img src="/img/g-slider-img-555.jpg" alt="g-slider-img-3"></li>
 			</ul>
 		  <a href="#" id="ticker-next" class="slider-down"><span></span></a> 
 		</div>
