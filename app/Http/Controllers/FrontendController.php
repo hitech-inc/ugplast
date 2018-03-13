@@ -55,7 +55,7 @@ class FrontendController extends Controller
         $category = Category::where('Slug', $id)->first(); //По Slug получаю id, т.е. запись по которой кликнули, т.е. получаем категорию по ее id.
         $products = Product::where('category_id', '=', $category->id)->get();
         //dd($products->toArray());
-        return view('frontend.product', compact('products'));
+        return view('frontend.category', compact('products', 'category'));
       }
     }
 
@@ -115,7 +115,7 @@ class FrontendController extends Controller
                     </div>';
 
         //dd($data);
-        Mail::to('advanced315@gmail.com')->send(new SendMail($data));
+        Mail::to('yugplastuko@mail.ru')->send(new SendMail($data));
 
         return redirect('/contacts')->with('status', $success);
     }

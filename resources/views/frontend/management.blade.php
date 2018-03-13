@@ -22,7 +22,7 @@
 						<div class="col-12" style="text-align: center;">
 							<img src="img/injener.jpg" alt="Нурлан Темирбаев, Главный инжерен технолог" style="border-radius: 8px">
 							<h4 style="margin-top: 25px; margin-bottom: 0">Нурлан Темирбаев</h4>
-							<p style="margin-bottom: 15px">Главный инжерен технолог</p>
+							<p style="margin-bottom: 15px">Главный инженер технолог</p>
 						</div>
 					</div>
 				</div>

@@ -4,17 +4,17 @@
 		<title>Юг Пласт</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">	
  
-		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="/css/bootstrap.min.css">
 
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="/css/style.css">
 
-		<link rel="stylesheet" href="css/owl.carousel.min.css">
-		<link rel="stylesheet" href="css/lightbox.min.css">
+		<link rel="stylesheet" href="/css/owl.carousel.min.css">
+		<link rel="stylesheet" href="/css/lightbox.min.css">
 		<!-- mobile-->
-		<link rel="stylesheet" href="css/mobile.css">
-		<link rel="stylesheet" href="css/mobile.sm.css">
-		<link rel="stylesheet" href="css/mobile.md.css">
-		<link rel="stylesheet" href="css/mobile.lg.css">
+		<link rel="stylesheet" href="/css/mobile.css">
+		<link rel="stylesheet" href="/css/mobile.sm.css">
+		<link rel="stylesheet" href="/css/mobile.md.css">
+		<link rel="stylesheet" href="/css/mobile.lg.css">
 
 		
 	</head>
@@ -28,8 +28,8 @@
 		<footer>
 			@include('frontend.partials._footer')
 		</footer>
-		<script src="js/jquery-3.3.1.min.js"></script>
-		<script type="text/javascript" src="js/jquery.totemticker.js"></script>
+		<script src="/js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="/js/jquery.totemticker.js"></script>
 		<script type="text/javascript">
 			$(function(){
 				$('#vertical-ticker-gallery').totemticker({
@@ -54,7 +54,7 @@
 				});
 			});
 		</script>
-		<script src="js/owl.carousel.min.js"></script>
+		<script src="/js/owl.carousel.min.js"></script>
 		<script>
 			$('.owl-carousel').owlCarousel({
 			    loop:true,
@@ -78,9 +78,9 @@
 			
 		</script>
 
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/myScript.js"></script>
-		<script src="js/lightbox.min.js"></script>
+		<script src="/js/bootstrap.min.js"></script>
+		<script src="/js/myScript.js"></script>
+		<script src="/js/lightbox.min.js"></script>
 		<script>
 		    lightbox.option({
 		      'resizeDuration': 200,
@@ -90,7 +90,7 @@
 		      'showImageNumberLabel': false
 		    })
 		</script>
-		<script src="js/jquery.touchSwipe.min.js"></script>
+		<script src="/js/jquery.touchSwipe.min.js"></script>
 		<script>
 			$('.cmn-toggle-switch').click(function() {
 	           $('.nav-mobile-wrapper').slideToggle();
