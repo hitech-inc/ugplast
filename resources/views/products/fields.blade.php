@@ -10,7 +10,7 @@
     {!! Form::text('Slug', null, ['class' => 'form-control']) !!}
 </div>
 
-<!-- Category Field -->
+<!-- Category Id Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('category_id', 'Category:') !!}
     {!! Form::select('category_id', App\Models\Category::groupedSelect(), null, ['class' => 'form-control']) !!}
@@ -49,7 +49,7 @@
 <!-- Price Field -->
 <div class="form-group col-sm-2">
     {!! Form::label('price', 'Price:') !!}
-    {!! Form::text('price', null, ['class' => 'form-control']) !!}
+    {!! Form::text('price', 'Уточнить по телефону', ['class' => 'form-control']) !!}
 </div>
 
 <!-- Url Field -->

@@ -111,8 +111,8 @@ class Category extends Model
 
     public function getChildren()
     {
-        //$children = self::where('parent_id', $this->id)->get(); //получаю всех детей
-        return self::descendantsOf($this->id); //получаю всех детей
+        //$children = self::where('parent_id', $this->id)->get(); //получаю всех детей средствами laravel
+        return self::descendantsOf($this->id); //получаю всех детей средствами библиотеки nestedset, descendantsOf это метод nestedset. Self это значит обращаться к самому себе, т.е. к моделе, классу Category
     }
     
 }
