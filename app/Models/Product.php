@@ -35,6 +35,7 @@ class Product extends Model
         'mm',
         'kg',
         'price',
+        'diametr_mm',
         'category_id'
     ];
 
