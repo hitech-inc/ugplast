@@ -1,10 +1,10 @@
 <table class="table table-responsive" id="news-table">
     <thead>
         <tr>
-            <th>Title</th>
-        <th>Body</th>
-        <th>Url</th>
-            <th colspan="3">Action</th>
+          <th>Title</th>
+          <th>Body</th>
+          <th>Slug</th>
+          <th colspan="3">Действия</th>
         </tr>
     </thead>
     <tbody>
@@ -12,7 +12,7 @@
         <tr>
             <td>{!! $news->title !!}</td>
             <td>{!! $news->body !!}</td>
-            <td>{!! $news->url !!}</td>
+            <td>{!! $news->slug !!}</td>
             <td>
                 {!! Form::open(['route' => ['news.destroy', $news->id], 'method' => 'delete']) !!}
                 <div class='btn-group'>

@@ -11,7 +11,7 @@
 			<div class="col-12">
 				<h4>{{ $new->title }}</h4>
 				<p>{!! $new->body !!}</p>
-				<a href="" class="linkMore">Подробнее<span></span></a>
+				<a href="{{ url('all-news/' . $new->slug) }}" class="linkMore">Подробнее<span></span></a>
 			</div>
 			@endforeach
 		</div>

@@ -5,7 +5,7 @@
 	@include('frontend.partials._topMenu')
 
 	<div class="container">
-		<h3 class="mainTitle" style="color: transparent;">Перечень выпускаемых труб ТОО «Компания ЮгПласт»</h3>
+		<h3 id="anchore" class="mainTitle" style="color: transparent;">Перечень выпускаемых труб ТОО «Компания ЮгПласт»</h3>
 		<div class="row">
 			@include('frontend.partials._sidebar')
 			<div class="col-9">

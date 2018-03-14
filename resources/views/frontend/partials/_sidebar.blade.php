@@ -1,10 +1,10 @@
 <div class="col-12 col-sm-12 col-md-3 col-lg-3 order-2 order-sm-2 order-md-1 order-lg-1" id="sidebar">
 	<div class="s-catalogue">
-		<h4>Каталог продукции</h4>
+		<a href="/productions" target="_blank"><h4>Каталог продукции</h4></a>
 		<ul>
-			<li><a href="#1">Полиэтиленовые трубы</a></li>
+			<li><a href="/productions/#anchore" target="_blank">Полиэтиленовые трубы</a></li>
 			<!-- <li><a href="#2">Сварочные аппараты</a></li> -->
-			<li><a href="#3">Фитинги компрессинговые</a></li>
+			<li><a href="/productions/#anchore" target="_blank">Фитинги компрессинговые</a></li>
 		</ul>
 	</div>
 	<div class="s-news">
@@ -27,7 +27,7 @@
 		</div>
 	</div>
 	<div class="s-gallery">
-		<h4>Галерея<p>ФОТО | ВИДЕО</p></h4>
+		<a href="/gallery" target="_blank"><h4>Галерея<p>ФОТО | ВИДЕО</p></h4></a>
 		<div id="wrapper-gallery">
 			<a href="#" id="ticker-previous" class="slider-up"><span></span></a> 
 			<ul id="vertical-ticker-gallery">

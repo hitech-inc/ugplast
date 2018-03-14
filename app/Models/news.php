@@ -27,7 +27,8 @@ class news extends Model
     public $fillable = [
         'title',
         'body',
-        'url'
+        'url',
+        'slug'
     ];
 
     /**
@@ -48,7 +49,7 @@ class news extends Model
      */
     public static $rules = [
         'title' => 'required',
-        'body' => 'required'
+        'body' => 'required',
     ];
 
     public static function getnews(){

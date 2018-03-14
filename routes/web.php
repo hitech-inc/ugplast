@@ -19,7 +19,7 @@ Route::get('/ourservices', 'FrontendController@ourservices');
 Route::get('/about', 'FrontendController@about');
 Route::get('/contacts', 'FrontendController@contacts');
 Route::get('/productions/{id?}', 'FrontendController@productions'); 
-Route::get('/all-news', 'FrontendController@news');
+Route::get('/all-news/{id?}', 'FrontendController@news');
 Route::get('/certs', 'FrontendController@certs');
 Route::get('/management', 'FrontendController@management');
 Route::get('/gallery', 'FrontendController@gallery');
