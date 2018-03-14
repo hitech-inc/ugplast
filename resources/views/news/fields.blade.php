@@ -22,6 +22,12 @@
     {!! Form::text('url', null, ['class' => 'form-control']) !!}
 </div>
 
+<!-- Image Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('img', 'Image:') !!}
+    {!! Form::file('img', null, ['class' => 'form-control']) !!}
+</div>
+
 <!-- Submit Field -->
 <div class="form-group col-sm-12">
     {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}

@@ -12,10 +12,11 @@
 					@foreach( $mynew as $new )
 					<h1>{{ $new->title }}</h1>
 					<div class="col-3">
-						<img src="/img/{{ $new->img }}" alt="">
+						<img src="/img/news/{{ $new->img }}" alt="" style="max-width: 100%; border-radius: 8px">
 					</div>
 					<div class="col-9">
 						{!! $new->body !!}
+						<a href="/all-news" class="backButton"><span class=""></span>Назад</a>
 					</div>
 					@endforeach	
 				</div>

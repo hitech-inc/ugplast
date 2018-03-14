@@ -28,7 +28,8 @@ class news extends Model
         'title',
         'body',
         'url',
-        'slug'
+        'slug',
+        'img'
     ];
 
     /**
