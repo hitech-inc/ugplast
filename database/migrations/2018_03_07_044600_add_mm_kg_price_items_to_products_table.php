@@ -15,8 +15,8 @@ class AddMmKgPriceItemsToProductsTable extends Migration
     {
         Schema::table('products', function (Blueprint $table) {
             //
-            $table->string('mm', 255);
-            $table->string('kg,', 255);
+            $table->string('mm', 255)->nullable();
+            $table->string('kg,', 255)->nullable();
             $table->string('price')->nullable();
         });
     }

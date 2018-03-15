@@ -23,6 +23,9 @@ Route::get('/all-news/{id?}', 'FrontendController@news');
 Route::get('/certs', 'FrontendController@certs');
 Route::get('/management', 'FrontendController@management');
 Route::get('/gallery', 'FrontendController@gallery');
+Route::get('/price-lists', function(){
+	return view('frontend.price-lists');
+});
 Route::post('/sendmail', 'FrontendController@sendmail');
 
 // Route::get('/', function () {

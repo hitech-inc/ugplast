@@ -15,7 +15,7 @@ class AddItemDianeterMmToProductsTable extends Migration
     {
         Schema::table('products', function (Blueprint $table) {
             //
-            $table->float('diameter_mm');
+            $table->float('diameter_mm')->nullable();
         });
     }
 

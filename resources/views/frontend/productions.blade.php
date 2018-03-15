@@ -12,7 +12,7 @@
 				<div class="row">
 					@foreach($categorys as $category)
 					<div class="col-3">
-						<img src="/img/products/{{ $category->Picture }}" alt="" style="max-width: 100%; margin-bottom: 25px; border-radius: 8px;">
+						<img src="img/products/{{ $category->Picture }}" alt="" style="max-width: 100%; margin-bottom: 25px; border-radius: 8px;">
 					</div>
 
 					<div class="col-9">

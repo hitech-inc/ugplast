@@ -10,7 +10,13 @@
 			@include('frontend.partials._sidebar')
 			<div class="col-md-9 col-sm-9 col-xs-12">
 				<div class="row">
-					<div class="table-responsive">
+					@foreach( $products as $product )
+					<div class="col-12">
+						<img class="productsImg" src="/img/products/{{ $product->Img }}" alt="">
+						<div class="productContent">{!! $product->Body !!}</div>
+					</div>
+					@endforeach
+					{{--<div class="table-responsive">
 						<table class="table table-striped table-hover">
 							<tr>
 								<th>Диаметр р, мм</th>
@@ -27,7 +33,7 @@
 							</tr>
 							@endforeach
 						</table>
-					</div>
+					</div>--}}
 				</div>
 			</div>
 		</div>
