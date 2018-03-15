@@ -4,7 +4,7 @@
 		<ul>
 			<li><a href="/productions/#anchore" target="_blank">Полиэтиленовые трубы</a></li>
 			<!-- <li><a href="#2">Сварочные аппараты</a></li> -->
-			<li><a href="/productions/#anchore" target="_blank">Фитинги компрессинговые</a></li>
+			<li><a href="/productions/#anchore" target="_blank">Фитинги для полипропиленовых труб</a></li>
 		</ul>
 	</div>
 	<div class="s-news">

@@ -19,7 +19,8 @@
 				{!! $page->body !!}
 			</div>
 			@endforeach
-			<div class="services">
+			
+			{{--<div class="services">
 				<h3>Наши услуги | <a href="/ourservices" target="_blank">Посмотреть все</a></h3>
 				<div class="service-boxes">
 					@foreach( $services as $service )
@@ -30,7 +31,8 @@
 				    </div>
 				    @endforeach
 				</div>
-			</div>
+			</div>--}}
+
 			<div class="certificates">
 				<h3>Сертификаты | <a href="/certs" target="_blank">Посмотреть все</a></h3>
 				<div class="cert-boxes owl-carousel">
@@ -40,20 +42,22 @@
 					<div class="item"><a href="img/cert-2.jpg" data-lightbox="roadtrip"><img src="img/cert-2-min.jpg" alt=""></a></div>
 				</div>
 			</div>
+
+			<div class="container" id="container-4">
+				@foreach( $blocks as $block )
+				<div class="row" id="fourth-row" {{--style="background-image: url('img/{{$block->img}}')"--}}>
+					<div class="col-12" id="pipes">
+							<h3>{{ $block->title }}</h3>
+							<p>{{ $block->body }}</p>
+							<a href="#more">Подробнее<span></span></a>	
+					</div>
+				</div>
+				@endforeach
+			</div> <!-- #container-4 -->
 		</div>
 	</div>
 </div> <!-- #container-3 -->
-<div class="container" id="container-4">
-	@foreach( $blocks as $block )
-	<div class="row" id="fourth-row" style="background-image: url('img/{{$block->img}}')">
-		<div class="col-12" id="pipes">
-				<h3 style="width: 60%">{{ $block->title }}</h3>
-				<p>{{ $block->body }}</p>
-				<a href="#more">Подробнее<span></span></a>	
-		</div>
-	</div>
-	@endforeach
-</div> <!-- #container-4 -->
+
 <div class="container" id="container-5">
 	<div class="row" id="fifth-row">
 		<div class="col-12" id="advantages">

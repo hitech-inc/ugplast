@@ -612,9 +612,9 @@ img.lb-image {
 #fourth-row {
 	height: 100%;
 	width: 100%;
-	padding-top: 75px;
+	/*padding-top: 75px;*/
 	margin: 0;
-	background-image: url('../img/advantages-bg.jpg');
+	/*background-image: url('../img/advantages-bg.jpg');*/
 	background-size: cover;
 }
 
@@ -627,7 +627,7 @@ img.lb-image {
 	font-size: 1.5em;
 	line-height: 1.2em;
 	color: #7e7e7e;
-	max-width: 550px;
+	/*max-width: 550px;*/
 	text-align: justify;
 }
 #pipes a {
@@ -640,7 +640,7 @@ img.lb-image {
 	border-radius: 7px;
 	color: #fff;
 	background-color: #00669e;
-	margin-left: 280px;
+	/*margin-left: 280px;*/
 	margin-top: 30px;
 	text-transform: uppercase;
 }
