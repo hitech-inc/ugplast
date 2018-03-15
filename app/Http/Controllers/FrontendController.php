@@ -13,7 +13,6 @@ use App\Models\news;
 use App\Models\Category;
 use App\Mail\SendMail;
 use Mail;
-use Kalnoy\Nestedset\NodeTrait;
 
 class FrontendController extends Controller
 {
@@ -38,29 +37,24 @@ class FrontendController extends Controller
 
     public function productions(Request $request, $id = "")
     {
-      //Если не истина т.е. если не щелкнули по определенной ссылке в каталоге, то отображаем все категории и подкатегории
       if(!$id)
       {
-        $productions = Product::where('category_id', '=', 0)->get();
+        $productions = Product::get();
         $categorys = Category::where('parent_id', null)->get();
-        //dd($categorys);
+
         foreach($categorys as $category)
         {
           //Получаю все подкатегории
           $category->children = $category->getChildren();
-          //dd($category->children);
         }
-        //dd($category);
-        return view('frontend.productions', compact('productions', 'categorys'));
+        //dd($Categorys);
+        return view('frontend.productions', compact('productions', 'categorys', 'subCategorys'));
       } 
-
-      //Иначе если щелкнули по определенной ссылке в отображаемом каталоге, то отображаем детали продукта по которому щелкнули.
       else
       {
         $category = Category::where('Slug', $id)->first(); //По Slug получаю id, т.е. запись по которой кликнули, т.е. получаем категорию по ее id.
         $products = Product::where('category_id', '=', $category->id)->get();
         //dd($products->toArray());
-        //dd($category->toArray());
         return view('frontend.category', compact('products', 'category'));
       }
     }
@@ -82,25 +76,13 @@ class FrontendController extends Controller
     	return view('frontend.contacts');
     }
 
-    public function news(Request $request, $id = "")
+    public function news()
     {
 
-      if (!$id)
-      {
-        $news = news::get();
-        //$sidebarNews = news::getnews();
-        //dd($news);
-        return view('frontend.all-news', compact('news', 'sidebarNews'));
-      }
-
-      else
-      {
-        $news = news::where('slug', $id)->first(); //
-        $mynew = news::where('id', '=', $news->id)->get();
-        //dd($mynew->toArray());
-        return view('frontend.new', compact('mynew'));
-      }
-    	
+    	$news = news::get();
+    	//$sidebarNews = news::getnews();
+    	//dd($gNews);
+    	return view('frontend.all-news', compact('news', 'sidebarNews'));
     }
 
     public function management()

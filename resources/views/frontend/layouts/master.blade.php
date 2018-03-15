@@ -21,6 +21,8 @@
 		<div style="display: none"><a class="rc-copyright" 
 		href="http://redconnect.ru">Сервис обратного звонка RedConnect</a></div>
 		<!--/RedConnect -->
+
+		<!-- <link rel="shortcut icon" href="asset('img/logo/favicon.png')"> -->
 		
 	</head>
 	<body>

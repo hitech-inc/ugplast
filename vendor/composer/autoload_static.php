@@ -357,6 +357,10 @@ class ComposerStaticInitef7c766f7e7ef7a4a771bf11d138608c
         ),
         'L' => 
         array (
+            'Laravelrus\\LocalizedCarbon\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/laravelrus/localized-carbon/src',
+            ),
             'Laracasts\\Flash' => 
             array (
                 0 => __DIR__ . '/..' . '/laracasts/flash/src',
@@ -2299,6 +2303,24 @@ class ComposerStaticInitef7c766f7e7ef7a4a771bf11d138608c
         'Laravel\\Tinker\\Console\\TinkerCommand' => __DIR__ . '/..' . '/laravel/tinker/src/Console/TinkerCommand.php',
         'Laravel\\Tinker\\TinkerCaster' => __DIR__ . '/..' . '/laravel/tinker/src/TinkerCaster.php',
         'Laravel\\Tinker\\TinkerServiceProvider' => __DIR__ . '/..' . '/laravel/tinker/src/TinkerServiceProvider.php',
+        'Laravelrus\\LocalizedCarbon\\DiffFactoryFacade' => __DIR__ . '/..' . '/laravelrus/localized-carbon/src/Laravelrus/LocalizedCarbon/DiffFactoryFacade.php',
+        'Laravelrus\\LocalizedCarbon\\DiffFormatterFactory' => __DIR__ . '/..' . '/laravelrus/localized-carbon/src/Laravelrus/LocalizedCarbon/DiffFormatterFactory.php',
+        'Laravelrus\\LocalizedCarbon\\DiffFormatters\\ArDiffFormatter' => __DIR__ . '/..' . '/laravelrus/localized-carbon/src/Laravelrus/LocalizedCarbon/DiffFormatters/ArDiffFormatter.php',
+        'Laravelrus\\LocalizedCarbon\\DiffFormatters\\BgDiffFormatter' => __DIR__ . '/..' . '/laravelrus/localized-carbon/src/Laravelrus/LocalizedCarbon/DiffFormatters/BgDiffFormatter.php',
+        'Laravelrus\\LocalizedCarbon\\DiffFormatters\\DiffFormatterInterface' => __DIR__ . '/..' . '/laravelrus/localized-carbon/src/Laravelrus/LocalizedCarbon/DiffFormatters/DiffFormatterInterface.php',
+        'Laravelrus\\LocalizedCarbon\\DiffFormatters\\EnDiffFormatter' => __DIR__ . '/..' . '/laravelrus/localized-carbon/src/Laravelrus/LocalizedCarbon/DiffFormatters/EnDiffFormatter.php',
+        'Laravelrus\\LocalizedCarbon\\DiffFormatters\\EsDiffFormatter' => __DIR__ . '/..' . '/laravelrus/localized-carbon/src/Laravelrus/LocalizedCarbon/DiffFormatters/EsDiffFormatter.php',
+        'Laravelrus\\LocalizedCarbon\\DiffFormatters\\FrDiffFormatter' => __DIR__ . '/..' . '/laravelrus/localized-carbon/src/Laravelrus/LocalizedCarbon/DiffFormatters/FrDiffFormatter.php',
+        'Laravelrus\\LocalizedCarbon\\DiffFormatters\\NlDiffFormatter' => __DIR__ . '/..' . '/laravelrus/localized-carbon/src/Laravelrus/LocalizedCarbon/DiffFormatters/NlDiffFormatter.php',
+        'Laravelrus\\LocalizedCarbon\\DiffFormatters\\PtDiffFormatter' => __DIR__ . '/..' . '/laravelrus/localized-carbon/src/Laravelrus/LocalizedCarbon/DiffFormatters/PtDiffFormatter.php',
+        'Laravelrus\\LocalizedCarbon\\DiffFormatters\\RuDiffFormatter' => __DIR__ . '/..' . '/laravelrus/localized-carbon/src/Laravelrus/LocalizedCarbon/DiffFormatters/RuDiffFormatter.php',
+        'Laravelrus\\LocalizedCarbon\\DiffFormatters\\SkDiffFormatter' => __DIR__ . '/..' . '/laravelrus/localized-carbon/src/Laravelrus/LocalizedCarbon/DiffFormatters/SkDiffFormatter.php',
+        'Laravelrus\\LocalizedCarbon\\DiffFormatters\\TrDiffFormatter' => __DIR__ . '/..' . '/laravelrus/localized-carbon/src/Laravelrus/LocalizedCarbon/DiffFormatters/TrDiffFormatter.php',
+        'Laravelrus\\LocalizedCarbon\\DiffFormatters\\UkDiffFormatter' => __DIR__ . '/..' . '/laravelrus/localized-carbon/src/Laravelrus/LocalizedCarbon/DiffFormatters/UkDiffFormatter.php',
+        'Laravelrus\\LocalizedCarbon\\LocalizedCarbon' => __DIR__ . '/..' . '/laravelrus/localized-carbon/src/Laravelrus/LocalizedCarbon/LocalizedCarbon.php',
+        'Laravelrus\\LocalizedCarbon\\LocalizedCarbonServiceProvider' => __DIR__ . '/..' . '/laravelrus/localized-carbon/src/Laravelrus/LocalizedCarbon/LocalizedCarbonServiceProvider.php',
+        'Laravelrus\\LocalizedCarbon\\Models\\Eloquent' => __DIR__ . '/..' . '/laravelrus/localized-carbon/src/Laravelrus/LocalizedCarbon/Models/Eloquent.php',
+        'Laravelrus\\LocalizedCarbon\\Traits\\LocalizedEloquentTrait' => __DIR__ . '/..' . '/laravelrus/localized-carbon/src/Laravelrus/LocalizedCarbon/Traits/LocalizedEloquentTrait.php',
         'League\\Flysystem\\AdapterInterface' => __DIR__ . '/..' . '/league/flysystem/src/AdapterInterface.php',
         'League\\Flysystem\\Adapter\\AbstractAdapter' => __DIR__ . '/..' . '/league/flysystem/src/Adapter/AbstractAdapter.php',
         'League\\Flysystem\\Adapter\\AbstractFtpAdapter' => __DIR__ . '/..' . '/league/flysystem/src/Adapter/AbstractFtpAdapter.php',
