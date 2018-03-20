@@ -16,7 +16,7 @@
 					    <div class="carousel-caption">
 						    <p>{{ $slider->slidertext }}</p>
 						</div>
-						<div class="more-info">
+						{{--<div class="more-info">
 							<div class="top-more-info">
 								<h3>{{ $slider->title }}</h3>
 								<p>{!! $slider->body !!}</p>
@@ -24,7 +24,7 @@
 							<div class="bottom-more-info">
 								<a href="{{ $slider->url }}">Подробнее<span></span></a>
 							</div>
-						</div>
+						</div>--}}
 				    </div>
 				    @endforeach
 				  </div>
