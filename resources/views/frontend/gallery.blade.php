@@ -8,7 +8,7 @@
 		<h3 class="mainTitle">Галерея</h3>
 		<div class="row" id="third-row">
 			@include('frontend.partials._sidebar')
-			<div class="col-9">
+			<div class="col-9 order-2">
 				<div class="row">
 					<div class="container galleryContainer">
 						<div class="col-4">

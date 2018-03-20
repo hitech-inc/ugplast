@@ -8,7 +8,7 @@
 		<h3 class="mainTitle">{{ $category->Name }}</h3>
 		<div class="row">
 			@include('frontend.partials._sidebar')
-			<div class="col-md-9 col-sm-9 col-xs-12">
+			<div class="col-md-9 col-sm-9 col-xs-12 order-2">
 				<div class="row">
 					@foreach( $products as $product )
 					<div class="col-12">

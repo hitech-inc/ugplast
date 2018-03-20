@@ -8,7 +8,7 @@
 		<h3 id="anchore" class="mainTitle" style="color: transparent;">Перечень выпускаемых труб ТОО «Компания ЮгПласт»</h3>
 		<div class="row">
 			@include('frontend.partials._sidebar')
-			<div class="col-9">
+			<div class="col-9 order-2">
 				<div class="row">
 					@foreach($categorys as $category)
 					<div class="col-3">
