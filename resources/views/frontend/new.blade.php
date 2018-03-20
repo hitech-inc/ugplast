@@ -7,7 +7,7 @@
 	<div class="container" style="padding-top: 50px;">
 		<div class="row">
 			@include('frontend.partials._sidebar')
-			<div class="col-9">
+			<div class="col-9 order-2">
 				<div class="row">
 					<h1>{{ $mynew->title }}</h1>
 					<div class="col-3">
