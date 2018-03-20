@@ -47,14 +47,14 @@ class FrontendController extends Controller
           //Получаю все подкатегории
           $category->children = $category->getChildren();
         }
-        //dd($Categorys);
+        //dd($category);
         return view('frontend.productions', compact('productions', 'categorys', 'subCategorys'));
       } 
       else
       {
         $category = Category::where('Slug', $id)->first(); //По Slug получаю id, т.е. запись по которой кликнули, т.е. получаем категорию по ее id.
         $products = Product::where('category_id', '=', $category->id)->get();
-        //dd($products->toArray());
+        //dd($category->toArray());
         return view('frontend.category', compact('products', 'category'));
       }
     }
@@ -76,13 +76,23 @@ class FrontendController extends Controller
     	return view('frontend.contacts');
     }
 
-    public function news()
+    public function news(Request $request, $id = "")
     {
-
-    	$news = news::get();
-    	//$sidebarNews = news::getnews();
-    	//dd($gNews);
-    	return view('frontend.all-news', compact('news', 'sidebarNews'));
+        if ( !$id )
+        {
+          $news = news::get();
+          $category = Category::where('Slug', $id)->first();
+          //$sidebarNews = news::getnews();
+          //dd($news);
+          return view('frontend.all-news', compact('news', 'sidebarNews')); 
+        }
+        else
+        {
+          $mynew = news::where('Slug', $id)->first();
+          //dd($mynew->toArray());
+          return view('frontend.new', compact('mynew'));
+        }
+    	
     }
 
     public function management()
