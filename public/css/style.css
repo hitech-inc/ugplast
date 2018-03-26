@@ -1012,3 +1012,8 @@ div.lb-nav{
 .imgMaxWidth{
 	max-width: 100%;
 }
+
+.title404{
+	padding: 100px;
+	text-align: center;
+}
