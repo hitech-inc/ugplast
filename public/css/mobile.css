@@ -412,7 +412,7 @@ div.logo-bot{
 }
 
 div.logo-bot > div{
-	display: block;
+	display: flex;
 	border-left: none;
 }
 
@@ -448,6 +448,11 @@ div.logo-bot > div{
 
 .productsImg{
 	width: 100%;
+}
+
+footer{
+	margin-top: -140px;
+	height: auto;
 }
 
 }/*eof media max576*/
