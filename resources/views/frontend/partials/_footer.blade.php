@@ -46,12 +46,12 @@
 	<div class="footer-bot">
 		<div class="logo-bot">
 			<div>
-				<img src="/img/logo/ugplastLogo.png" alt="#foot-logo">
+				<a href="/"><img src="/img/logo/ugplastLogo.png" alt="#foot-logo"></a>
 			</div>
 		</div>
 		<div class="logo-bot">
 			<div>
-				<img src="/img/logo.png" alt="#foot-logo">
+				<a href="http://www.aspan-pro.kz/" target="_blank"><img src="/img/logo.png" alt="#foot-logo"></a>
 			</div>
 		</div>
 		<div class="footer-contacts">

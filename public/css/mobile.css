@@ -396,11 +396,26 @@ img.lb-image {
 /******* FOOTER *********/
 
 footer {
-	height: 590px;
+	/*height: 590px;*/
 }
 .footer-container {
-	height: 500px;
+	/*height: 500px;*/
 }
+
+div.footer-bot{
+	height: auto;
+}
+
+div.logo-bot{
+	border-left: 2px solid #fff;
+	text-align: center;
+}
+
+div.logo-bot > div{
+	display: block;
+	border-left: none;
+}
+
 .footer-container .row{
 	padding: 0 15px; 
 	margin: 0 auto;
@@ -420,6 +435,19 @@ footer {
 }
 .footer-contacts p {
 	padding-left: 5px;
+	padding-top: 5px;
+}
+
+.lb-container div.lb-nav{
+	top: 0;
+}
+
+.pagesTitle{
+	padding: 0 15px;
+}
+
+.productsImg{
+	width: 100%;
 }
 
 }/*eof media max576*/

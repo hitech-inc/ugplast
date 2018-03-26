@@ -1008,3 +1008,7 @@ div.lb-nav{
 .productContent ul li{
 	list-style: initial;
 }
+
+.imgMaxWidth{
+	max-width: 100%;
+}

@@ -26,14 +26,15 @@
 	<div class="clear"></div>
 	<div class="nav-mobile-wrapper">
 		<ul class="nav-mobile">
-			<li><a href="index.html">О компании</a></li>
-			<li><a href="history.html">История</a></li>
-			<li><a href="press-center.html">Пресс-центр</a></li>
-			<li><a href="news.html">Новости</a></li>
-			<li><a href="#3">Продукция</a></li>
-			<li><a href="#4">Прайс-листы</a></li>
-			<li><a href="#5">Сертификаты</a></li>
-			<li><a href="#6">Контакты</a></li>
+			<li><a href="/">Главная</a></li>
+			<li><a href="/about">О компании</a></li>
+			<li><a href="/management">Руководство</a></li>
+			<li><a href="/gallery">Галерея</a></li>
+			<li><a href="/all-news">Новости</a></li>
+			<li><a href="/productions">Продукция</a></li>
+			<li><a href="/price-lists">Прайс-листы</a></li>
+			<li><a href="/certs">Сертификаты</a></li>
+			<li><a href="/contacts">Контакты</a></li>
 		</ul>			
 	</div>
 </div>
