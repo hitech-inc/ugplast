@@ -455,6 +455,11 @@ footer{
 	height: auto;
 }
 
+h2.title404{
+	text-align: center; 
+	padding: 80px !important;
+}
+
 }/*eof media max576*/
 
 
