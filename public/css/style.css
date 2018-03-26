@@ -969,7 +969,7 @@ div.lb-dataContainer{
 }
 
 div.lb-nav{
-	top: 55%;
+	top: 200%;
 }
 
 .backButton{
@@ -1016,4 +1016,8 @@ div.lb-nav{
 .title404{
 	padding: 100px;
 	text-align: center;
+}
+
+.galleryBlocks{
+	float: left;
 }

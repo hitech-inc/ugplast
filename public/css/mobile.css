@@ -440,6 +440,7 @@ div.logo-bot > div{
 
 .lb-container div.lb-nav{
 	top: 0;
+	z-index: 0;
 }
 
 .pagesTitle{

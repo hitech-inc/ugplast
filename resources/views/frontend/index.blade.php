@@ -1,6 +1,17 @@
 @extends('frontend.layouts.master')
 
 @section('content')
+
+@if ($currentUrl == null)
+	<style>
+		div.lb-dataContainer{
+			margin-top: -65%;
+		}
+		.lb-container div.lb-nav{
+			top: 50%;
+		}
+	</style>
+@endif
 <div class="container" id="container-1">
 		<div class="row" id="first-row">
 			@include('frontend.partials._slider')

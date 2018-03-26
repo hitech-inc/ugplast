@@ -17,8 +17,10 @@ use Mail;
 class FrontendController extends Controller
 {
     //get index page
-    public function index()
+    public function index(Request $request)
     {
+        $currentUrl = \Request::segment(null);
+        //dd($currentUrl);
     	$pages = Page::where('url', '/')->get();
     	$pAbout = Page::where('url', '/about')->get();
     	$sliders = sliders::get();
@@ -26,7 +28,7 @@ class FrontendController extends Controller
     	$blocks = Blocks::get();
     	$advantages = advantages::get();
     	//dd($pAbout);
-    	return view('frontend.index', compact('pages', 'sliders', 'services', 'blocks', 'advantages', 'pAbout'));
+    	return view('frontend.index', compact('pages', 'sliders', 'services', 'blocks', 'advantages', 'pAbout', 'currentUrl'));
     }
 
     public function about()
@@ -102,7 +104,8 @@ class FrontendController extends Controller
 
     public function gallery()
     {
-        return view('frontend.gallery');
+        $currentUrl = \Request::segment(1);
+        return view('frontend.gallery', compact('currentUrl'));
     }
 
     public function sendmail(Request $request)
