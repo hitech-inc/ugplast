@@ -6,7 +6,7 @@
 <div class="header-container">
 	<div class="logo">
 		<!-- <a href="/"><img class="graphiclogo" src="img/logo/ugplastLogo.png" alt="logo"></a> -->
-		<a href="/"><img class="graphiclogo" src="/img/logo.png" alt="logo"></a>
+		<a href="http://www.aspan-pro.kz/" target="_blank"><img class="graphiclogo" src="/img/logo.png" alt="logo"></a>
 	</div>	
 	<nav>
 		<ul class="topnav" id="myTopnav">
