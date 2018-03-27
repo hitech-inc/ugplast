@@ -14,9 +14,6 @@ $(document).ready(function () {
 	if (sResult == '/gallery' && $(window).width() <= '995'){
 		$('.lb-container div.lb-nav').css('top', '0');
 	}
-	else{
-		alert('hello');
-	}
 
 	function windowSize(){
 		if ($(window).width() <= '995'){
