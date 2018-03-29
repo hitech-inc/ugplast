@@ -1,3 +1,9 @@
+<style>
+	span#spnPhoneStatus
+{
+    font-weight:bold;
+}
+</style>
 <div class="container" id="container-7">
 	<div class="row" id="seventh-row">
 		<div class="col-12 col-sm-12 col-md-8 col-lg-8" id="map">
@@ -6,13 +12,52 @@
 		</div>
 		<div class="col-12 col-sm-12 col-md-4 col-lg-4" id="feedback">
 			<h3>Оставьте заявку</h3>
-			<form action="/sendmail" method="POST">
+			<p id="message" >Пожалуйста, заполните все поля формы!</p>
+			<form action="/sendmail" method="post" name="myForm" onsubmit="return validateForm()">
+				{{--<input type="hidden" id="token" value="{{ csrf_token() }}">--}}
 				{{ csrf_field() }}
-				<input type="text" name="name" placeholder="Ваше имя">
-				<input type="text" name="phone" placeholder="Ваш телефон">
-				<input type="text" name="email" placeholder="Ваш e-mail">
-				<input type="submit" value="Отправить">
+				<input type="text" name="name" placeholder="Ваше имя" id="username">
+				<input type="text" name="phone" placeholder="Ваш телефон" id="phone">
+				<input type="text" name="email" placeholder="Ваш e-mail" id="email">
+				<input type="submit" value="Отправить" id="btn">
 			</form>
 		</div>
 	</div>
 </div> <!-- #container-7 -->
+
+<script>
+	function validateForm() {
+		//validate phone
+		var re = /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,17}(\s*)?$/;
+	    var myPhone = document.getElementById('phone').value;
+	    var valid = re.test(myPhone);
+	    //alert(myPhone);
+
+	  // validate email
+		var x = document.forms["myForm"]["email"].value;
+		var atpos = x.indexOf("@");
+		var dotpos = x.lastIndexOf(".");
+		var name = document.getElementById("username").value;
+		var phone = document.getElementById("phone").value;
+		if (name == ""){
+			$("#username").attr('placeholder', 'Введите Имя').val('').css({'border':'2px solid red'});
+		}
+		else $("#username").css('border', '2px solid green'); 
+
+		if (phone == ""){
+			$("#phone").attr('placeholder', 'Введите Номер телефона').val('').css({'border':'2px solid red'});
+		}
+
+		else if(!valid) $("#phone").attr('placeholder', 'Введите например: +77775556677').val('').css({'border':'2px solid red'});
+
+		else $("#phone").css('border', '2px solid green');
+
+		if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+			// alert("Not a valid e-mail address");
+			$("#email").val('').css({'border':'2px solid red'});
+			$("#email").attr("placeholder", "Введите корректный email");
+		}
+		else $("#email").css('border', '2px solid green');
+		return valid;
+	}
+</script>

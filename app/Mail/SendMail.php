@@ -31,7 +31,7 @@ class SendMail extends Mailable
      */
     public function build()
     {
-        return $this->from('noreply@yug-plast.kz')
+        return $this->from(env('MAIL_FROM_ADDRESS'))
                         ->view('frontend.email.email')
                         ->with([
                             'name'=> $this->name,

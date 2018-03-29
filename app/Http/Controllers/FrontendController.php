@@ -127,9 +127,12 @@ class FrontendController extends Controller
                       <h2 style="text-align: center; color: #000; padding: 25px;">Спасибо, Ваша заявка принята!</h2>
                     </div>';
 
-        //dd($data);
-        Mail::to('yugplastuko@mail.ru')->send(new SendMail($data));
-
-        return redirect('/contacts')->with('status', $success);
+        //dd($success);
+        $mailsend = Mail::to('advanced315@gmail.com')->send(new SendMail($data));
+        if ($mailsend)
+        {
+          //return redirect('/contacts')->with('status', $success);
+          return 1;
+        }
     }
 }

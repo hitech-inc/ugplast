@@ -3,6 +3,7 @@
 	<head>
 		<title>Юг Пласт</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">	
+		<meta name="csrf-token" content="{{ csrf_token() }}" />
  
 		<link rel="stylesheet" href="/css/bootstrap.min.css">
 
@@ -10,6 +11,9 @@
 
 		<link rel="stylesheet" href="/css/owl.carousel.min.css">
 		<link rel="stylesheet" href="/css/lightbox.min.css">
+		<!-- modal success -->
+		<link rel="stylesheet" href="/css/jquery.sweet-modal.min.css">
+
 		<!-- mobile-->
 		<link rel="stylesheet" href="/css/mobile.css">
 		<link rel="stylesheet" href="/css/mobile.sm.css">
@@ -112,6 +116,41 @@
                     $("#carouselExampleIndicators").carousel('prev'); 
                 }
 	      	})
+		</script>
+		<!-- modal success -->
+		<script src="/js/jquery.sweet-modal.min.js"></script>
+		<!-- maskedinput -->
+		<script src="/js/jquery.maskedinput.min.js"></script>
+
+		<script>
+				$.ajaxSetup({
+        	headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+          }
+        });
+
+        //$("#phone").mask("7(999)999-99-99");
+				
+				$('form').on('submit', function(e){
+
+					data = $(this).serialize();
+					//console.log(data);
+					url = $(this).attr('action');
+					//console.log(url);
+					$.ajax({
+						url: url,
+						type: 'post',
+						data: data,
+						success: function(data){
+							//console.log(data);
+							$.sweetModal({
+								content: 'Заявка успешно отравлена.',
+								icon: $.sweetModal.ICON_SUCCESS
+							});
+						}
+					});
+					e.preventDefault();
+				});
 		</script>
 	</body>
 </html>
